@@ -1,0 +1,61 @@
+<html>
+	<head>
+		<title>DECr - Start page</title>
+		<meta name='Author' content='Adam Wróbel' />
+		<meta name='Description' content='Default "Drupal Environment Creator" wellcome page' />
+		<style>
+		html {
+			height: 100%;
+			width: 100%;
+			background-color: #ebebeb;
+		}
+
+		body {
+			position: relative;
+			min-height: 100%;
+			width: 100%;
+			display: flex;
+			align-items: center;
+			flex-direction: column;
+			font-family: sans-serif, "Ubuntu";
+			margin: 0;
+			padding: 0;
+			color: #1d1d1d;
+			background-color: #ebebeb;
+		}
+		
+		h1 {
+			margin: 10 0 6vh 0;
+			text-align: center;
+		}
+		
+		section {
+			width: 60%;
+			background-color: #fff;
+			margin: 4vh 0;
+			padding: 6vh 10%;
+			border: 2px solid #424242;
+			border-radius: 0.3em;
+		}
+		</style>
+	</head>
+	<body>
+		<h1>Drupal Environment Creator (DECr)</h1>
+		<section>
+			<h2>Turn on</h2>
+			<span>Run command <strong>vagrant up</strong></span>
+		</section>
+		<section>
+			<h2>Turn off</h2>
+			<span>Run command <strong>vagrant halt</strong></span>
+		</section>
+		<section>
+			<h2>Re-initialize</h2>
+			<span>Run command <strong>vagrant provision</strong></span>
+		</section>
+		<section>
+			<h2>Re-create</h2>
+			<span>Run commands <strong>vagrant destroy</strong> & <strong>vagrant up<strong></span>
+		</section>
+	</body>
+</html>
