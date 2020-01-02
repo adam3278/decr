@@ -1,0 +1,21 @@
+{
+  "memory": "2048",
+  "start_ip": "192.168.19.10",
+  "start_host": "start.decr",
+  "instances": [
+    {
+	  "name": "Vagrant with Drupal",
+	  "drup_ver": "8.8.x",
+	  "php_ver": "7.3",
+	  "ip": "192.168.19.11",
+	  "host": "vgdrup8.decr",
+	  "path": "drupal8",
+	  "catalog_type": "default",
+	  "user": {
+	    "login": "admin",
+	    "pass": "DrUp8atVaG^an!"
+	  }
+    }
+  ],
+  "forwarded_ports": []
+}
