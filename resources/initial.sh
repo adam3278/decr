@@ -50,7 +50,7 @@ do
 	cd /var/www/${SITES_path[$site]}
 	git clone --branch ${SITES_drup_ver[$site]} https://git.drupal.org/project/drupal.git .
 	php7.3 /bin/composer require drush/drush
-	echo -e "y\n" | drush si standard --db-url=mysql://drup-${SITES_user[$site]}:${USERS[${SITES_user[$site]}]}@localhost:3306/drup-$site-db --site-name=${SITES_drup[$site]} --account-name=${SITES_user[$site]} --account-pass=${USERS[${SITES_user[$site]}]}
+	echo -e "y\n" | drush si standard --db-url=mysql://drup-${SITES_user[$site]}:${USERS[${SITES_user[$site]}]}@localhost:3306/drup-$site-db --site-name="${SITES_drup[$site]}" --account-name="${SITES_user[$site]}" --account-pass="${USERS[${SITES_user[$site]}]}"
 done
 
 echo -e "0000000000\noooooooooo\n0000000000\noooooooooo     ^^%^^^^^^DECr Successfully (re)installed^^^^^^%^^\n0000000000\noooooooooo\n0000000000"
